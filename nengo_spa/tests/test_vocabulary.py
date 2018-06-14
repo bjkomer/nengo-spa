@@ -64,12 +64,6 @@ def test_populate(rng):
     with pytest.raises(AttributeError):
         v.populate('I = H.invalid()')
 
-    # invalid names: lowercase, unicode
-    with pytest.raises(SpaParseError):
-        v.populate('x = A')
-    # with pytest.raises(SpaParseError):
-    v.populate(u'Aα = A')
-
 
 def test_populate_with_transform_on_first_vector(rng):
     v = Vocabulary(64, rng=rng)
