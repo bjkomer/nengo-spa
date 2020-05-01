@@ -34,6 +34,12 @@ Release History
   (`#239 <https://github.com/nengo/nengo_spa/issues/239>`__,
   `#240 <https://github.com/nengo/nengo_spa/pull/240>`__)
 
+**Fixed**
+
+- Fixed an issue where the names of iteratively generated semantic pointers
+  could grow exponentially in length, by truncating them at 1 KB.
+  (`#244 <https://github.com/nengo/nengo_spa/issues/244>`__,
+  `#246 <https://github.com/nengo/nengo_spa/pull/246>`__)
 
 
 1.0.1 (December 14, 2019)
